@@ -68,7 +68,7 @@ public class JuroComposto extends HttpServlet {
                     for(int j=1; j <= t; j++){
                         double m = cap * (Math.pow((1 + (i/100) ),j));
                         BigDecimal bd = new BigDecimal(m).setScale(2, RoundingMode.HALF_EVEN);
-                        out.println("<br>");
+                       
                         out.println("<tr>");
                         out.println("<th> Mês "+j +":</th>");
                         out.println("<td>"+ bd +"</td>");
